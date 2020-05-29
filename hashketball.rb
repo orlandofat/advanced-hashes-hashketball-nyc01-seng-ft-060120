@@ -196,7 +196,10 @@ end
 
 
 def big_shoe_rebounds 
-  rebounds = 0
+ found_player = get_players.find do |player|
+   player[:player_name] == player_name
+ end
+ found_player[:shoe].max
   
  end
     
